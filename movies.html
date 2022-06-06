@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #navbar{
+            display: flex;
+            justify-content: space-around;
+            background-color: black;
+            border: 2px solid black;
+            color: white;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        input{
+            width: 80%;
+            margin-left: 110px;
+            padding: 20px;
+            font-size: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        #boss{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(50,auto);
+            grid-gap: 10px;
+        }
+        #boss div{
+            box-shadow: 2px 2px 3px black;
+            border-radius: 10px;
+            width: 300px;
+            height: auto;
+            margin-left: 50px;
+        }
+        #sha{
+            transform: translate(100px);
+            padding: 10px;
+            border: inset;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <h2><a href="index.html">Home</a></h2>
+        <h2><a href="movies.html">Movies</a></h2>
+        <h2><a href="checkout.html">Checkout</a></h2>
+        <h2 id="sumone"></h2>
+    </div>
+    <br>
+    <input type="search" name="" id="boom" oninput="mainbro(hellobro,1000)" placeholder="Search-Moves">
+    <br>
+    <div id="boss"></div>
+</body>
+</html>
+<script src="movie.js"></script>
